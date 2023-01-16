@@ -1,0 +1,56 @@
+<!--  
+    - Header
+-->
+<%- include("partials/header.ejs")  %>
+
+
+<!--  
+    - Navbar
+-->
+<%- include("partials/navbar.ejs")  %>
+
+
+<!--  
+    - Register Form
+-->
+<div class="register--form_area">
+
+    <form action="/api/register" method="post" enctype="multipart/form-data" class="register">
+        <div class="form--header">
+            <p>#register</p>
+        </div>
+        <div class="input--area">
+            <div class="input-control">
+                <label for="names">names</label>
+                <input type="text" name="names" id="names">
+            </div>
+            <div class="input-control">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-control">
+                <label for="username">username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="input-control">
+                <label for="image">profile picture</label>
+                <input type="file" name="image" id="image">
+            </div>
+            <div class="input-control">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
+            </div>
+        </div>
+        <button type="submit" role="button">register</button>
+        <div class="no--account">
+            <p>Have an Account?, Login <a href="/api/login">here</a> </p>
+        </div>
+    </form>
+
+</div>
+
+
+<!--  
+    - Footer
+-->
+<%- include("partials/footer.ejs")  %> 

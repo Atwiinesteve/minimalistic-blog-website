@@ -1,0 +1,43 @@
+<header>
+
+    <nav class="navbar">
+        <div class="logo--area">
+            <p>blogs buster</p>
+        </div>
+        <div class="links">
+
+            <% if (user) { %>
+                <ul>
+                    <li class="welcome">
+                        <p>Welcome <%=user.email %></p>
+                    </li>
+                    <li class="link">
+                        <a href="/api/home">home</a>
+                    </li>
+                    <li class="link">
+                        <a href="/api/logout">logout</a>
+                    </li>
+                </ul>
+            <% } else { %>
+                <ul>
+                    <li class="link">
+                        <a href="/api/home">home</a>
+                    </li>
+                    <li class="link">
+                        <a href="/api/dashboard">dashboard</a>
+                    </li>
+                    <li class="link">
+                        <a href="/api/register">signup</a>
+                    </li>
+                    <li class="link">
+                        <a href="/api/login">signin</a>
+                    </li>
+                </ul>
+            <% } %>
+
+
+            
+        </div>
+    </nav>
+
+</header>

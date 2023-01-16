@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    background-color: rgb(244, 249, 253);
+}
+
+/*  
+    - Header styles
+*/
+header {
+    width: 100vw;
+    height: 6vh;
+    background: blue;
+}
+
+header nav {
+    width: 100%;
+    height: 6vh;
+    padding: 0rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo--area {
+    color: white;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+header nav .links ul li.welcome p {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+header nav .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .links ul li {
+    list-style: none;
+    margin: 0rem 10px;
+}
+
+header nav .links ul li a {
+    color: white;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* 
+    - Login Form Page
+*/
+.login--form_area {
+    width: 100%;
+    height: 90vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login--form_area form.login {
+    width: 400px;
+    height: 400px;
+    background: white;
+}
+
+.login--form_area form.login .form--header {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.login--form_area form.login .input--area .input-control {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0rem;
+}
+
+.login--form_area form.login label {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.login--form_area form.login input {
+    padding: 0.8rem 1rem;
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.login--form_area form.login input[type="password"],
+.login--form_area form.login input[type=password], 
+.login--form_area form.login input[type="text"],
+.login--form_area form.login input[type=text], 
+.login--form_area form.login input[type="email"],
+.login--form_area form.login input[type=email] {
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align: center;
+}
+
+.login--form_area form.login {
+    padding: 0rem 1rem;
+}
+
+.login--form_area form.login button {
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0.7rem 0;
+    margin: 0.7rem 0;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.login--form_area form.login .no--account {
+    text-align: center;
+}
+
+
+/* 
+    - Register Form Page
+*/
+.register--form_area {
+    width: 100%;
+    height: 94vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register--form_area form.register {
+    width: 450px;
+    height: 700px;
+    background: white;
+}
+
+.register--form_area form.register .form--header {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.register--form_area form.register .input--area .input-control {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0rem;
+}
+
+.register--form_area form.register label {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.register--form_area form.register input {
+    padding: 0.8rem 1rem;
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.register--form_area form.register input[type="password"],
+.register--form_area form.register input[type=password], 
+.register--form_area form.register input[type="text"],
+.register--form_area form.register input[type=text], 
+.register--form_area form.register input[type="email"],
+.register--form_area form.register input[type=email] {
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align: center;
+}
+
+.register--form_area form.register {
+    padding: 0rem 1rem;
+}
+
+.register--form_area form.register button {
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0.7rem 0;
+    margin: 0.7rem 0;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.register--form_area form.register .no--account {
+    text-align: center;
+}

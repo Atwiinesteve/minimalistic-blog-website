@@ -1,0 +1,53 @@
+<!--  
+    - Header
+-->
+<%- include("partials/header.ejs")  %>
+
+
+<!--  
+    - Navbar
+-->
+<%- include("partials/navbar.ejs")  %>
+
+<main>
+
+    <section id="posts--area">
+
+        <div class="blogs--header">
+            <h1>Posterings..</h1>
+        </div>
+        <div class="blogs--container">
+
+            <% if(blogs) { %>
+                <% blogs.forEach(blog => { %>
+                    <div class="blog">
+                        <div class="blog--title">
+                            <%= blog.title %>
+                        </div>
+                        <div class="blog--image">
+                            <%= blog.image %>
+                        </div>
+                        <div class="blog--content">
+                            <%= blog.content %>
+                        </div>
+                        <div class="blog--author">
+                            <%= blog.author %>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p>no blogs</p>
+            <% } %>
+            
+            
+            
+        </div>
+
+    </section>
+
+</main>
+
+<!--  
+    - Footer
+-->
+<%- include("partials/footer.ejs")  %> 

@@ -1,0 +1,45 @@
+<!--  
+    - Header
+-->
+<%- include("partials/header.ejs")  %>
+
+
+<!--  
+    - Navbar
+-->
+<%- include("partials/navbar.ejs")  %>
+
+
+<!--  
+    - Login Form
+-->
+<div class="login--form_area">
+
+    <form action="/api/login" method="post" class="login">
+        <div class="form--header">
+            <p>#login</p>
+        </div>
+        <div class="input--area">
+            <div class="input-control">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-control">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
+            </div>
+        </div>
+        <button type="submit" role="button">login</button>
+        <div class="no--account">
+            <p>No Account?, Don't freek. Register <a href="/api/register">here</a> </p>
+        </div>
+    </form>
+
+</div>
+
+
+
+<!--  
+    - Footer
+-->
+<%- include("partials/footer.ejs")  %> 
